@@ -1,2 +1,8 @@
-package net.kourifa.customerservice.config;public class CustomerConfigParams {
+package net.kourifa.customerservice.config;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties(prefix = "customer.params")
+public record CustomerConfigParams(int x, int y) {
+
 }
